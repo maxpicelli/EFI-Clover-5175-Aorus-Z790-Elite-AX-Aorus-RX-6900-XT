@@ -1,4 +1,4 @@
-🍀 # EFI Clover 5173 - Aorus Z790 Elite AX + RX 6900 XT
+🍀 # EFI Clover 5175 - Aorus Z790 Elite AX + RX 6900 XT
 
 ## 📋 Especificações do Hardware
 
@@ -59,6 +59,6 @@ Esta EFI inclui o **FileVault Disable Patcher** configurado no `config.plist` co
 
 **⚠️ Disclaimer**: Este projeto é apenas para fins educacionais. O uso de macOS em hardware não-Apple pode violar os termos de serviço da Apple. Use por sua própria conta e risco.
 
-**📅 Última Atualização**: Julho 2026
-**🔧 Versão Clover**: 5173
+**📅 Última Atualização**: Setembro 2026
+**🔧 Versão Clover**: 5175
 **💻 Hardware**: Aorus Z790 Elite AX + RX 6900 XT + i9-13900K

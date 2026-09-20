@@ -199,7 +199,7 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>Cm0KAw==</data>
 					<key>Replace</key>
@@ -213,7 +213,7 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>Cm0KBA==</data>
 					<key>Replace</key>
@@ -241,7 +241,7 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1dBSwk=</data>
 					<key>Replace</key>
@@ -255,7 +255,7 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1dBSwE=</data>
 					<key>Replace</key>
@@ -269,7 +269,7 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1BUUwk=</data>
 					<key>Replace</key>
@@ -283,7 +283,7 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1BUUwE=</data>
 					<key>Replace</key>
@@ -378,7 +378,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>alcid=12 npci=0x3000 revcpu=1 revpatch=cpuname,sbvmm,diskread,pci agdpmod=pikera ctrsmt=full -wegnoigpu watchdog=0 keepsyms=1 -allow_fv -allow_amfi</string>
+		<string>alcid=12 npci=0x3000 revcpu=1 revpatch=cpuname,sbvmm,diskread,pci ctrsmt=full -wegnoigpu keepsyms=1</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -392,7 +392,7 @@
 		<key>NeverDoRecovery</key>
 		<true/>
 		<key>NeverHibernate</key>
-		<false/>
+		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>RtcHibernateAware</key>
@@ -595,6 +595,13 @@
 				<string>PCI bridge</string>
 				<key>model</key>
 				<string>Raptor Lake PCI Express 5.0 Graphics Port (PEG010)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>CFG,CFG_USE_AGDC</key>
+				<data>AA==</data>
+				<key>disable-agdc</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
@@ -805,11 +812,11 @@
 					<key>NoCaches</key>
 					<false/>
 					<key>Path</key>
-					<string>\5F1D9408-3BFA-4A63-82E8-5380FEBDF63E\System\Library\CoreServices\boot.efi</string>
+					<string>\0A1F66B1-9FC8-4029-9CEC-DA548EFD90BC\System\Library\CoreServices\boot.efi</string>
 					<key>Type</key>
 					<string>OSX</string>
 					<key>Volume</key>
-					<string>2A9F923F-203F-4959-98E5-ABC9F0296841</string>
+					<string>7A6F432B-B4EE-48CB-8FFE-87CA87503B8D</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -817,15 +824,15 @@
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>macOs Tahoe</string>
+					<string>macOS Tahoe</string>
 					<key>NoCaches</key>
 					<false/>
 					<key>Path</key>
-					<string>\5B007968-07CE-4922-B123-9B96EF15FD32\System\Library\CoreServices\boot.efi</string>
+					<string>\1A568D4C-0F60-458F-BDD9-D9C331EB3228\System\Library\CoreServices\boot.efi</string>
 					<key>Type</key>
 					<string>OSX</string>
 					<key>Volume</key>
-					<string>D16455B1-F498-4408-BABC-16549CDAE465</string>
+					<string>E5DEF07D-BF2F-4D4C-8279-B788BDEE621E</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -863,7 +870,7 @@
 		<key>ShowOptimus</key>
 		<true/>
 		<key>Theme</key>
-		<string>Glass</string>
+		<string>History</string>
 		<key>Timezone</key>
 		<integer>-3</integer>
 	</dict>
@@ -971,7 +978,7 @@
 		<key>AppleRTC</key>
 		<false/>
 		<key>BlockSkywalk</key>
-		<true/>
+		<false/>
 		<key>Debug</key>
 		<false/>
 		<key>DellSMBIOSPatch</key>
@@ -1035,9 +1042,9 @@
 		<key>EnableSafeModeSlide</key>
 		<true/>
 		<key>EnableWriteUnprotector</key>
-		<true/>
+		<false/>
 		<key>ExternalDiskIcons</key>
-		<true/>
+		<false/>
 		<key>ForceExitBootServices</key>
 		<false/>
 		<key>ForceOcWriteFlash</key>
@@ -1063,8 +1070,10 @@
 		<key>ProvideMaxSlide</key>
 		<integer>0</integer>
 		<key>RebuildAppleMemoryMap</key>
-		<false/>
+		<true/>
 		<key>ResizeAppleGpuBars</key>
+		<integer>-1</integer>
+		<key>ResizeGpuBars</key>
 		<integer>-1</integer>
 		<key>SetupVirtualMap</key>
 		<true/>
@@ -1077,7 +1086,7 @@
 		<key>TscSyncTimeout</key>
 		<integer>0</integer>
 		<key>XhciPortLimit</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -1088,9 +1097,9 @@
 		<key>HWTarget</key>
 		<string>J160AP</string>
 		<key>MLB</key>
-		<string>F5K9364054NK3F71H</string>
+		<string>C02038101J90000UE</string>
 		<key>ROM</key>
-		<data>77WmORIH</data>
+		<data>HFzypufb</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -1099,47 +1108,47 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MP71.88Z.F000.B00.2310052024</string>
+		<string>IM201.88Z.F000.B00.2310052037</string>
 		<key>Board-ID</key>
-		<string>Mac-27AD2F918AE68F61</string>
+		<string>Mac-AF89B6D9451A490B</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>F5K9234034NFHDDJA</string>
+		<string></string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>MacPro7,1</string>
+		<string>iMac20,2</string>
 		<key>ChassisAssetTag</key>
-		<string></string>
+		<string>Asset Tag#</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x7</string>
+		<string>0xD</string>
 		<key>EfiVersion</key>
 		<string>2020.41.1.0.0</string>
 		<key>ExtendedFirmwareFeatures</key>
-		<string>0x00000008FDAFF066</string>
+		<string>0x00000008FFB3F066</string>
 		<key>ExtendedFirmwareFeaturesMask</key>
-		<string>0x00000008FFFFFF7F</string>
+		<string>0x00000008FFFFFFFF</string>
 		<key>Family</key>
-		<string>MacPro</string>
+		<string>iMac</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFDAFF066</string>
+		<string>0xFFB3F066</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFFFFFF7F</string>
+		<string>0xFFFFFFFF</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>PlatformFeature</key>
-		<string>0x0</string>
+		<string>0x20</string>
 		<key>ProductName</key>
-		<string>MacPro7,1</string>
+		<string>iMac20,2</string>
 		<key>SerialNumber</key>
-		<string>F5KYTFYPP7QM</string>
+		<string>C02DFEYH046M</string>
 		<key>SmUUID</key>
-		<string>25BA6D3C-1C35-474D-9252-1D1A5540E763</string>
+		<string>A339A690-5F15-44FF-B50C-4EFEDA203383</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

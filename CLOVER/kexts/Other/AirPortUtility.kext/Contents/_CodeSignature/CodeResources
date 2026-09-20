@@ -21,10 +21,6 @@
 	<dict>
 		<key>Resources/AirPortUtility</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aboEhJGtOcoVLvTUed/M1Ber0Z0=
-			</data>
 			<key>hash2</key>
 			<data>
 			oWk+DjwmcAk609BuYCffng0qDPNRJ2cYMbmf78L0hM4=
@@ -32,10 +28,6 @@
 		</dict>
 		<key>Resources/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			F+LcDGhrTe3FREjCOXPOcVQebT8=
-			</data>
 			<key>hash2</key>
 			<data>
 			VMB7TAwFh9xT+ks33smFJpk+tOrjkpOBZPQhV7TpA3g=
@@ -43,10 +35,6 @@
 		</dict>
 		<key>Resources/version.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vKlb6yVcK8Dcpb+lEW+TUpZeP/8=
-			</data>
 			<key>hash2</key>
 			<data>
 			tKm2xY04nYBMfcQ1u0TALV3mjDtjcF7b7S0g8ax85s8=
