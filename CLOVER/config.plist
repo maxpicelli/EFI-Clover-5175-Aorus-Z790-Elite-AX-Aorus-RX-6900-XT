@@ -371,14 +371,12 @@
 			<true/>
 			<key>NoOemTableId</key>
 			<true/>
-			<key>PluginType</key>
-			<string>1</string>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>alcid=12 npci=0x3000 revcpu=1 revpatch=cpuname,sbvmm,diskread,pci ctrsmt=full -wegnoigpu keepsyms=1</string>
+		<string>alcid=12 npci=0x3000 revcpu=1 revpatch=cpuname,sbvmm,diskread,pci ctrsmt=full -wegnoigpu keepsyms=1 itlwm_he=1</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -872,7 +870,7 @@
 		<key>Theme</key>
 		<string>History</string>
 		<key>Timezone</key>
-		<integer>-3</integer>
+		<integer>21</integer>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -977,8 +975,6 @@
 		<false/>
 		<key>AppleRTC</key>
 		<false/>
-		<key>BlockSkywalk</key>
-		<false/>
 		<key>Debug</key>
 		<false/>
 		<key>DellSMBIOSPatch</key>
@@ -1028,6 +1024,8 @@
 		<key>DevirtualiseMmio</key>
 		<true/>
 		<key>DisableIoMapper</key>
+		<true/>
+		<key>DisableIoMapperMapping</key>
 		<true/>
 		<key>DisableLinkeditJettison</key>
 		<true/>

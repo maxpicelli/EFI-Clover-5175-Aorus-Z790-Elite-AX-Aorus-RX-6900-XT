@@ -1,64 +1,35 @@
-🍀 # EFI Clover 5175 - Aorus Z790 Elite AX + RX 6900 XT
+# EFI Clover 5175 - Aorus Z790 Elite AX + RX 6900 XT
 
-## 📋 Especificações do Hardware
+EFI destinada ao hardware abaixo, com Clover r5175 (`a193364cc`). A pasta EFI e o `config.plist` foram atualizados a partir do backup local em outubro de 2026.
 
-### 🖥️ **Placa Mãe**
-- **Modelo**: Gigabyte Aorus Z790 Elite AX (rev. 1.0)
-- **Chipset**: Intel Z790
-- **Socket**: LGA 1700
+## Hardware de referência
 
-### 🔧 **Processador**
-- **Modelo**: Intel Core i9-13900K (Raptor Lake)
-- **Cores**: 24 (8P + 16E)
-- **Threads**: 32
+- **Placa-mãe:** Gigabyte Aorus Z790 Elite AX, revisão 1.0
+- **Processador:** Intel Core i9-13900K (Raptor Lake, 8 P-cores + 16 E-cores, 32 threads)
+- **GPU:** Aorus Radeon RX 6900 XT, 16 GB GDDR6
 
-### 🎮 **Placa de Vídeo**
-- **Modelo**: AMD Radeon RX 6900 XT
-- **Fabricante**: Aorus (Gigabyte)
-- **VRAM**: 16GB GDDR6
+## Conteúdo da EFI
 
-## 🚀 **Compatibilidade macOS**
+- **ACPI:** 18 SSDTs e a tabela DMAR em `CLOVER/ACPI/patched`
+- **Drivers UEFI:** ApfsDriverLoader, OpenRuntime e VBoxHfs
+- **Kexts:** ACPIMonitor, AirPortUtility, AirportItlwm, AppleALC, BluetoothFileExchange, CpuTopologyRebuild, FakeSMC, FeatureUnlock, HibernationFixup, ITEIT87x, IntelCPUMonitor, Lilu, LucyRTL8125Ethernet, NVMeFix, NaviAudioFixup, NootRX, RTCMemoryFixup, RadeonMonitor, RestrictEvents, USBPorts e USBWakeFixup
+- **Configuração:** `CLOVER/config.plist`, com parâmetros de boot, gráficos, ACPI e patches de kernel/kext
 
-- **macOS Sequoia** (15.x)
-- **macOS Sonoma** (14.x)
-- **macOS Ventura** (13.x)
+O `config.plist` contém uma entrada de patch com o procedimento `_apfs_filevault_allowed`, relacionada ao macOS Tahoe. Isso, por si só, não garante compatibilidade geral com Tahoe nem significa que o FileVault esteja desativado.
 
-## 📦 **Kexts Incluídos**
+## SMBIOS e identificadores
 
-- **Lilu.kext** - Framework base
-- **AppleALC.kext** - Áudio
-- **NootRX.kext** - Suporte AMD RX 6900 XT
-- **LucyRTL8125Ethernet.kext** - Ethernet
-- **itlwm.kext** - WiFi Intel
-- E outros kexts essenciais
+O SMBIOS existente foi preservado nesta atualização. Não substitua nem remova os valores de SMBIOS, MLB, ROM ou UUID ao atualizar esta EFI. Para usar a EFI em outro computador, gere identificadores próprios para esse equipamento.
 
-## ⚙️ **ACPI Patches**
+## Compatibilidade e uso
 
-17 SSDTs incluídos para otimização do sistema.
+O projeto é destinado ao hardware de referência. Compatibilidade com uma versão específica do macOS depende também das versões dos kexts e do sistema instalado; faça testes e mantenha uma cópia de recuperação da EFI antes de atualizar.
 
-## 🔒 **FileVault Disable Patcher**
+1. Faça backup da EFI funcional antes de substituir arquivos.
+2. Confira as configurações da BIOS para a placa-mãe e a versão instalada; elas não são definidas por esta pasta EFI.
+3. Verifique os efeitos dos patches e a configuração do FileVault antes de usar criptografia.
 
-Esta EFI inclui o **FileVault Disable Patcher** configurado no `config.plist` com procedimento `_apfs_filevault_allowed` para macOS Tahoe.
+Este projeto é fornecido para fins educacionais e sem garantia. A execução do macOS em hardware que não seja Apple pode violar os termos de serviço da Apple.
 
-## ⚠️ **Avisos Importantes**
-
-1. **Backup**: Sempre faça backup da sua EFI atual
-2. **Serial Numbers**: Gere novos serial numbers únicos
-3. **SMBIOS**: Configure o SMBIOS adequado para seu hardware
-4. **FileVault**: Está desabilitado - não use se precisar de criptografia
-
-## 🔧 **Configurações BIOS **
-
-- Secure Boot: Desabilitado
-- Fast Boot: Desabilitado
-- CSM: Desabilitado
-- Resizable BAR: desativado
-- XMP/DOCP: Habilitado (DDR5)
-
----
-
-**⚠️ Disclaimer**: Este projeto é apenas para fins educacionais. O uso de macOS em hardware não-Apple pode violar os termos de serviço da Apple. Use por sua própria conta e risco.
-
-**📅 Última Atualização**: Setembro 2026
-**🔧 Versão Clover**: 5175
-**💻 Hardware**: Aorus Z790 Elite AX + RX 6900 XT + i9-13900K
+**Última atualização:** outubro de 2026
+**Clover:** r5175 (`a193364cc`)
