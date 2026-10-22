@@ -1,6 +1,6 @@
 # EFI Clover 5175 - Aorus Z790 Elite AX + RX 6900 XT
 
-EFI destinada ao hardware abaixo, com Clover r5175 (`a193364cc`). A pasta EFI e o `config.plist` foram atualizados a partir do backup local `20261021-clover-r5175-995bf1947`.
+EFI destinada ao hardware abaixo, com Clover r5175 (commit `995bf1947`). A pasta EFI e o `config.plist` foram atualizados a partir do backup local `20261021-clover-r5175-995bf1947`.
 
 ## Hardware de referência
 
@@ -31,6 +31,7 @@ O projeto é destinado ao hardware de referência. Compatibilidade com uma vers�
 
 Este projeto é fornecido para fins educacionais e sem garantia. A execução do macOS em hardware que não seja Apple pode violar os termos de serviço da Apple.
 
-**Última atualização:** outubro de 2026
-**Clover:** r5175 (`a193364cc`)
+**Backup local da EFI:** 21 de outubro de 2026
+**README atualizado:** 22 de outubro de 2026
+**Clover:** r5175, commit `995bf1947` (build `20261015175253-995bf19-dirty`)
 **Commit da atualização da EFI:** [16a0da1](https://github.com/maxpicelli/EFI-Clover-5175-Aorus-Z790-Elite-AX-Aorus-RX-6900-XT/commit/16a0da1)
